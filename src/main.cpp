@@ -1,7 +1,6 @@
 
 #define FASTLED_ALLOW_INTERRUPTS 1
 
-#include <main.h>
 #include <Arduino.h>
 #include <FastLED.h>
 #include <avr/sleep.h>
