@@ -82,6 +82,7 @@ void resetButtonState() {
 
 void updateColours(uint8_t offset = 0) {
     currentHue = beatsin8(colourChangeSpeed, 0,255, 255);
+    fill_rainbow(leds, NUM_LEDS, currentHue, deltaHue); 
 }
 
 void resetTimer() {
@@ -212,8 +213,7 @@ void loop() {
     if (!poweredOn) {
         powerDown();
     } else {
-        FastLED.setBrightness(BRIGHTNESS);
-        fill_rainbow(leds, NUM_LEDS, currentHue, deltaHue);            
+        FastLED.setBrightness(BRIGHTNESS);           
     }
 
     FastLED.show();
