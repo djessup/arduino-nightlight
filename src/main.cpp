@@ -10,7 +10,7 @@
 /* If enabled will sleep after N minutes, instead of N hours */
 // #define DEBUG_MODE
 
-#define NUM_LEDS 17      /* The amount of pixels/leds you have */
+#define NUM_LEDS 18      /* The amount of pixels/leds you have */
 #define DATA_PIN 6       /* The pin your data line is connected to */
 #define LED_TYPE WS2812B /* LED strip type */
 #define COLOR_ORDER GRB
@@ -22,8 +22,8 @@
  * START Configurable options
  */
 uint16_t LONG_PRESS_TICKS = 700; /* how many ticks must pass to consider a button-press "long" */
-uint8_t colourChangeSpeed = 2;   /* speed of colour change */
-uint8_t deltaHue = 2;            /* amount of colour change between each LED */
+uint8_t colourChangeSpeed = 3;   /* speed of colour change */
+uint8_t deltaHue = 3;            /* amount of colour change between each LED */
 uint8_t defaultSleepHours = 1;   /* amount of colour change between each LED */
 uint8_t maxSleepHours = 4;       /* amount of colour change between each LED */
 /**
